@@ -219,7 +219,7 @@ main{
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 6fr 1fr;
+    grid-template-rows: 6fr 10vh;
     column-count: 2;
     font-size:1.1rem;
 }
@@ -276,6 +276,7 @@ main{
     }
     .columns{
         width: 100%;
+        grid-template-rows: 4fr 10vh;
     }
 }
 /*--------------------Media Queries for the tablet under 720px---------------------------*/
