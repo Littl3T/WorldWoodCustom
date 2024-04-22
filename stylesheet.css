@@ -66,7 +66,7 @@ body, html {
 /*----------------------------------------------- MAIN  ------------------------------------*/
 
 main{
-    width: 80vw; /* Account for padding */
+    width: 80vw;
     padding: 2vw;
     display: flex;
     flex-direction: column;
@@ -74,6 +74,7 @@ main{
     margin: 0 auto;
     padding: 2vw;
 }
+
 /*----------------------------------------Section using flex--------------------------------*/
 .section_homepage{
     display: flex;
@@ -81,6 +82,14 @@ main{
     flex-direction: row;
     align-items: stretch;
 }
+
+.reverse_section_homepage{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: stretch;
+}
+
 /*----------------------------------IMAGES On the left of the sections-----------------------*/
 #first_section{
     background: url(img/woodturning.webp);
@@ -89,6 +98,7 @@ main{
     width: 48%;
     border-radius: 10vh;
 }
+
 #second_section{
     background: url(img/WoodBackground.webp);
     background-size: cover;
@@ -96,8 +106,70 @@ main{
     width: 48%;
     border-radius: 10vh;
 }
+
 .righ_section{
     width: 48%;
+}
+/* Products */
+#pen{
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    justify-content: center;
+    margin:4vh 0;
+}
+
+#earrings {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 25vw;
+}
+
+#earrings > * {
+    width: 100%;
+}
+
+#atomizer{
+    display: flex;
+    flex-direction: row;
+    width: 30vw;
+    align-items: center;
+    justify-content: center;
+}
+
+#atomizer > * {
+    width: max-content;
+    height: 12vw;
+}
+
+#top {
+    margin-left: 1vh;
+}
+
+#bowls{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+}
+#bowls > * {
+    width: 100%;
+    margin: 1vw;
+}
+
+#fruits{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:end;
+    width: 50vw;
+}
+#fruits > * {
+    width: 30%;
+    margin: 1vw;
 }
 
 /*----------------------------------------Each title is a h2---------------------------------*/
@@ -142,13 +214,14 @@ main{
     transition-timing-function: ease-in-out;
 }
 
-#a{
+.a{
     grid-row: 1/3;
 }
 
 .section_buttons:hover{
     transform:translateX(3rem);
 }
+
 .section_buttons:focus{
     transform:translateX(3rem);
 }
@@ -165,6 +238,7 @@ main{
     background-position: center center;
     text-align: center;
 }
+
 #products_banner a{
     text-decoration: none;
     color: white;
@@ -182,6 +256,7 @@ main{
     transform:scale(1.2);
     background-color: brown;
 }
+
 #products_banner a:focus{
     transform:scale(1.2);
     background-color: brown;
@@ -200,6 +275,7 @@ main{
     font-size: 3.5rem;
     padding:0;
 }
+
 #contact_section a h2 {
     margin: 0;
 }
@@ -213,6 +289,7 @@ main{
 #contact_section a:hover >img {
     transform: scale(1.5);
 }
+
 #contact_section a:focus >img {
     transform: scale(1.5);
 }
@@ -222,6 +299,7 @@ main{
 footer{
     background-color: rgb(232, 232, 232);
 }
+
 footer #footer_nav{
     display: flex;
     flex-direction: row;
@@ -229,16 +307,19 @@ footer #footer_nav{
     margin: 2rem ;
     align-items: stretch;
 }
+
 .footer_column a{
     text-decoration: none;
     color: black;
     font-size: 1.2rem;
 }
+
 .footer_column a h3{
     text-align: center;
     font-size: 1.8rem;
     margin: 1rem 0.5rem;
 }
+
 .socials{
     margin: 1rem 0.5rem;
     display: flex;
@@ -246,9 +327,11 @@ footer #footer_nav{
     justify-content: space-evenly;
     height: auto;
 }
+
 .socials img{
     width: 10vh;
 }
+
 .socials a{
     display: flex;
     justify-content: center;
@@ -256,12 +339,15 @@ footer #footer_nav{
     transition-duration: 500ms;
     transition-timing-function: ease-in-out;
 }
+
 .socials a:hover{
-    transform: scale(1.2);
+    transform
+    : scale(1.2);
 }
 .socials a:focus{
     transform: scale(1.2);
 }
+
 footer p{
     text-align: center;
     margin: 0;
@@ -269,7 +355,7 @@ footer p{
 }
 
 @media screen and (max-width:1280px){
-    .section_homepage{
+    .section_homepage,.reverse_section_homepage{
         display:flex;
         flex-direction: column;
         flex-wrap:wrap;
@@ -284,6 +370,14 @@ footer p{
     .righ_section{
         width: 100%;
     }
+    
+    #pen{
+        width: 55vw;
+    }
+    #fruits{
+        margin-top: 11vh;
+    }
+
     .columns{
         width: 100%;
         grid-template-rows: 4fr 10vh;
@@ -302,6 +396,7 @@ footer p{
         padding-bottom: 2vh;
         transition: all ease-in-out 1s;
     }
+
     #header_nav{
         justify-content: center;
         align-items: center;
@@ -327,7 +422,7 @@ footer p{
         z-index: 3;
         color: rgb(255, 255, 255);
         background-color: rgb(0, 0, 0);
-        margin: 5vh;
+        margin: 3.5vh;
         padding: 1vh 2vh;
         border-radius: 9999px;
         width:50vw;
@@ -398,14 +493,40 @@ footer p{
         height: 20vh;
     }
 
+    #pen{
+        width: 80vw;
+    }
+
+    #earrings {
+        width: 40vw;
+    }
+
+    #atomizer{
+        height: 26vw;
+    }
+    #atomizer > * {
+        height: 100%;
+    }
+
+    #bowls{
+        width: 50vw;
+    }
+    
+    #fruits{
+        width: 80vw;
+        margin-top: 30vw;
+    }
+
     #products_banner a{
         font-size: 3vw;
         padding: 3vw 5vw;
     }
+
     #products_banner a:hover{
         transform:scale(1.1);
         background-color: brown;
     }
+
     #products_banner a:focus{
         transform:scale(1.1);
         background-color: brown;
@@ -414,9 +535,11 @@ footer p{
     #contact_section a{
         padding: 0 1rem 0 1rem;
     }
+
     #contact_section a img{
         width: 30vw;
     }
+
     #contact_section a h2 {
         font-size: 3rem;
     }
@@ -429,15 +552,18 @@ footer p{
         flex-direction: column;
         align-items: center;
     }
+
     .socials{
         flex-direction: row;
         margin: 0;
         width: 100%;
         justify-content: space-around;
     }
+
     .socials img{
         width: 25vw;
     }
+
     .socials a{
         width: fit-content;
         padding: 1vh;
