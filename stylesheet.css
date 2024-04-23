@@ -81,6 +81,7 @@ main{
     justify-content: space-between;
     flex-direction: row;
     align-items: stretch;
+    margin: 3rem 0;
 }
 
 .reverse_section_homepage{
@@ -88,6 +89,58 @@ main{
     justify-content: space-between;
     flex-direction: row-reverse;
     align-items: stretch;
+}
+
+#quote{
+    text-align: center;
+    font-size: 2rem;
+}
+blockquote p{
+    font-family:'Calibri', sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 5rem;
+    margin: 2vw 5vw;
+}
+#quote cite{
+    font-style: normal;
+    font-weight: 700;
+}
+#quote_cite{
+    display: flex;
+    justify-content: end;
+}
+
+#wood_gallery{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#wood_gallery h2{
+    font-size: 3rem;
+    margin: 0;
+    text-align: center;
+}
+#gallery{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+}
+#gallery a{
+    width: 16rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+
+}
+#gallery img{
+    width: 100%;
+    border-radius: 50%;
+    transition:all 200ms ease-in-out;
+}
+
+#gallery a img:hover{ 
+    transform: scale(1.1);
 }
 
 /*----------------------------------IMAGES On the left of the sections-----------------------*/
