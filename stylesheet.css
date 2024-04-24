@@ -139,8 +139,8 @@ blockquote p{
     transition:all 200ms ease-in-out;
 }
 
-#gallery a img:hover{ 
-    transform: scale(1.1);
+#wood_gallery:has(#gallery a img:hover) {
+    filter: grayscale(100%);
 }
 
 /*----------------------------------IMAGES On the left of the sections-----------------------*/
@@ -193,7 +193,6 @@ blockquote p{
 }
 
 #atomizer > * {
-    width: max-content;
     height: 12vw;
 }
 
