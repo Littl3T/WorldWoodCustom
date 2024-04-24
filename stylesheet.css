@@ -124,7 +124,7 @@ blockquote p{
 }
 
 #wood_gallery h2{
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin: 0;
     text-align: center;
 }
@@ -134,24 +134,54 @@ blockquote p{
     flex-wrap: wrap;
     width: 100%;
     text-align: center;
+    justify-content: center;
+}
+
+#gallery figure{
+    margin: 0;
 }
 
 #gallery a{
-    width: 16rem;
+    width: 12rem;
+    margin: 1vh 3rem;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    color: black;
+}
 
+#wood_gallery:has(#gallery a img:hover) {
+    --grey: 100%;
+}
+
+#wood_gallery:not(#wood_gallery:has(#gallery a img:hover)) {
+    --grey: 0%;
 }
 
 #gallery img{
     width: 100%;
     border-radius: 50%;
     transition:all 200ms ease-in-out;
+    filter: grayscale(var(--grey));
 }
 
-#wood_gallery:has(#gallery a img:hover) {
-    filter: grayscale(100%);
+#gallery a img:hover{
+    transform: scale(1.2);
+    filter: grayscale(0%);
 }
+
+#gallery img{
+    width: 100%;
+    border-radius: 50%;
+    transition:all 300ms ease-in-out;
+
+    filter: grayscale(var(--grey));
+}
+
+#gallery a img:hover{
+    transform: scale(1.2);
+    filter: grayscale(0%);
+}
+
 
 /*----------------------------------IMAGES On the left of the sections-----------------------*/
 #first_section{
@@ -452,6 +482,7 @@ footer p{
         width: 100%;
         grid-template-rows: 4fr 10vh;
     }
+
 }
 
 @media screen and (max-width:720px){
@@ -558,9 +589,36 @@ footer p{
         display: flex;
         flex-direction: column;
     }
+
     .section_image{
         margin-top: 5vh;
         height: 20vh;
+    }
+
+    blockquote{
+        margin: 5vh 2vh;
+        font-size: 5vw
+    }
+
+    blockquote p{
+        font-size: 9vw;
+        margin: 0 0 2vh 0;
+    }
+
+    #gallery{
+        justify-content: space-around;
+    }
+    
+    #wood_gallery h2{
+        margin: 0;
+        font-size: 2.5rem;
+    }
+    #gallery a{
+        width: 40vw;
+        margin: 0 0 6vw 0;
+    }
+    #gallery a figcation{
+        font-size: 1.5rem;
     }
 
     #pen{
