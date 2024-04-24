@@ -26,6 +26,7 @@ body, html {
     margin-bottom: -7rem;
     padding-bottom: 1rem;
 }
+
 #header_nav a {
     text-decoration: none;
     color: rgb(255, 255, 255);
@@ -37,6 +38,7 @@ body, html {
 #header_nav a:focus{
     transform: scale(1.2) ;
 }
+
 #header_nav a:hover{
     transform: translateY(5px);
 }
@@ -52,6 +54,7 @@ body, html {
     align-items:end;
     padding-bottom: 8vh;
 }
+
 @media screen and (max-width:1300px){
     #banner_background{
         background-size: 200% auto;
@@ -95,6 +98,7 @@ main{
     text-align: center;
     font-size: 2rem;
 }
+
 blockquote p{
     font-family:'Calibri', sans-serif;
     font-weight: 100;
@@ -102,10 +106,12 @@ blockquote p{
     font-size: 5rem;
     margin: 2vw 5vw;
 }
+
 #quote cite{
     font-style: normal;
     font-weight: 700;
 }
+
 #quote_cite{
     display: flex;
     justify-content: end;
@@ -116,23 +122,27 @@ blockquote p{
     flex-direction: column;
     justify-content: center;
 }
+
 #wood_gallery h2{
     font-size: 3rem;
     margin: 0;
     text-align: center;
 }
+
 #gallery{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     text-align: center;
 }
+
 #gallery a{
     width: 16rem;
     text-decoration: none;
     font-size: 1.5rem;
 
 }
+
 #gallery img{
     width: 100%;
     border-radius: 50%;
@@ -163,6 +173,7 @@ blockquote p{
 .righ_section{
     width: 48%;
 }
+
 /* Products */
 #pen{
     display: flex;
@@ -229,9 +240,11 @@ blockquote p{
     font-size: 4rem;
     margin: 0;
 }
+
 .title{
     width: 100%;
 }
+
 /*---------------------------------The div columns is a grid---------------------------------*/
 /*-----------------------------to display the buttons and texts------------------------------*/
 .columns{
@@ -396,6 +409,7 @@ footer #footer_nav{
     transform
     : scale(1.2);
 }
+
 .socials a:focus{
     transform: scale(1.2);
 }
@@ -413,12 +427,15 @@ footer p{
         flex-wrap:wrap;
         align-items: center;
     }
+
     .section_image{
         height: 28vh;
     }
+
     .section_title{
         text-align: center;
     }
+
     .righ_section{
         width: 100%;
     }
@@ -426,6 +443,7 @@ footer p{
     #pen{
         width: 55vw;
     }
+
     #fruits{
         margin-top: 11vh;
     }
