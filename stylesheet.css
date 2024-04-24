@@ -78,6 +78,13 @@ main{
     padding: 2vw;
 }
 
+#contact_main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+}
+
 /*----------------------------------------Section using flex--------------------------------*/
 .section_homepage{
     display: flex;
@@ -182,6 +189,26 @@ blockquote p{
     filter: grayscale(0%);
 }
 
+#contact{
+    background: url(img/wood_pen_premium.webp);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50vw;
+    height: 80vh;
+    text-align: center;
+}
+#contact form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
 
 /*----------------------------------IMAGES On the left of the sections-----------------------*/
 #first_section{
